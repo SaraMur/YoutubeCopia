@@ -1,0 +1,156 @@
+*{
+margin:0px;
+box-sizing: border-box; 
+font-family: sans-serif; 
+}
+
+
+nav{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+sub{
+    vertical-align: top;
+    font-family: sans-serif;
+    
+    
+}
+span sub{
+    color: rgb(43, 43, 43);
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25vw;
+}
+
+ul li{
+    list-style:none;
+}
+
+
+
+.card{
+    width: 23vw;
+    height: 250px;
+    border: 1px lightgray solid;
+    /*margin-left: 20px;*/
+    margin-top: 10px;
+}
+.imagen{
+    width: 100%;
+    height: 154px;
+
+    background-image: url(https://i.ytimg.com/vi/bYSGpCAtFOI/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDDpZll_KmcrGDH2GyhLUwznIwZUQ);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.card-logo{
+    width: 15%;
+    height: 15%;
+    background-color: aqua;
+    border-radius: 70px 70px 70px;
+    display: flex;
+    
+}
+.card-titulos{
+    padding: 10px;
+    color: rgb(77, 77, 77);
+}
+#youtuber{
+
+    font-size: 0.90em;
+    font-weight: 100;
+}
+#visitas{
+
+    font-size: 0.90em;
+    font-weight: 100;
+    color:lightgray
+}
+.card-opciones{
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.card-opciones-boton{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 1;
+    padding-left: 95%;
+    padding-bottom: 120%;
+
+}
+
+
+.color-icono:hover{
+    color:  darkslategray
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width:576px){
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 2%;
+        margin-top: 10%;
+    }
+    .card{
+        width: 90%;
+        height: auto;
+        border: 1px lightgray solid;
+        margin-top: 10px;
+    }
+    .ocultar{
+        display: none;
+    }
+    .card-opciones-boton{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 1;
+        padding-left: 0%;
+        padding-bottom: 0%;
+    
+    }    
+}
